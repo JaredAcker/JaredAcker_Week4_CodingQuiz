@@ -115,4 +115,8 @@ function setQuestion(id) {
         secondsLeft = secondsLeft - 10;
         p.textContent = "Wrong!";
     }
+
+    if (questionCount < questions.length) {
+        questionCount++;
+    }
 }
