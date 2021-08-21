@@ -184,3 +184,11 @@ ansBtn.forEach(item => {
 
 // the "submit" button adds the score when you click on it
 submitScrBtn.addEventListener("click", addScore);
+
+// this makes the go back button reset the quiz
+goBackBtn.addEventListener("click", function () {
+    highscoresEl.style.display = "none";
+    introEl.style.display = "block";
+    secondsLeft = 75;
+    timeEl.textContent = `Time:${secondsLeft}s`;
+});
