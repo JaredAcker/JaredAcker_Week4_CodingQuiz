@@ -181,3 +181,6 @@ function clearScores() {
 ansBtn.forEach(item => {
     item.addEventListener('click', checkAnswer);
 });
+
+// the "submit" button adds the score when you click on it
+submitScrBtn.addEventListener("click", addScore);
