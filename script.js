@@ -11,6 +11,11 @@ let questionEl = document.querySelector("#question");
 let questionCount = 0;
 const yesnoEl = document.querySelector("#yesno");
 
+// high scores section that depicts the list of high scores in an array
+const highscoresEl = document.querySelector("#highscores");
+let scoreListEl = document.querySelector("#score-list");
+let scoreList = [];
+
 // starts the quiz
 const startBtn = document.querySelector("#start");
 
