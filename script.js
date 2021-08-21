@@ -134,3 +134,7 @@ function addScore(event) {
 
     finalEl.style.display = "none";
     highscoresEl.style.display = "block";
+
+    let init = initialsInput.value.toUpperCase();
+    scoreList.push({ initials: init, score: secondsLeft });
+}
