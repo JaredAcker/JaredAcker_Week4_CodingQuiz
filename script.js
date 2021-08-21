@@ -98,6 +98,7 @@ function setQuestion(id) {
     }
 }
 
+// these events cycle through and check the answers to the questions in the quiz
     function checkAnswer(event) {
     event.preventDefault();
 
@@ -123,5 +124,7 @@ function setQuestion(id) {
     setQuestion(questionCount);
 }
 
+
 // starts the quiz
 startBtn.addEventListener("click", startQuiz);
+
