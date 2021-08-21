@@ -161,3 +161,12 @@ function addScore(event) {
 function storeScores() {
     localStorage.setItem("scoreList", JSON.stringify(scoreList));
 }
+
+// pulls scores from local storage and parses JSON string to an object. Updates the score list array when the score is retrieved.
+function displayScores() {
+    let storedScoreList = JSON.parse(localStorage.getItem("scoreList"));
+
+    if (storedScoreList !== null) {
+        scoreList = storedScoreList;
+    }
+}
