@@ -100,3 +100,7 @@ function setQuestion(id) {
 
 function checkAnswer(event) {
     event.preventDefault();
+
+    yesnoEl.style.display = "block";
+    let p = document.createElement("p");
+    yesnoEl.appendChild(p);
