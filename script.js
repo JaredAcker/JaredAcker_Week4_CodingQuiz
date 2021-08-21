@@ -195,3 +195,14 @@ goBackBtn.addEventListener("click", function () {
 
 // clears the scores
 clearScrBtn.addEventListener("click", clearScores);
+
+// allows the quiz taker to see or hide the high score
+viewScrBtn.addEventListener("click", function () {
+    if (highscoresEl.style.display === "none") {
+        highscoresEl.style.display = "block";
+    } else if (highscoresEl.style.display === "block") {
+        highscoresEl.style.display = "none";
+    } else {
+        return alert("No scores to show.");
+    }
+});
