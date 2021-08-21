@@ -98,9 +98,13 @@ function setQuestion(id) {
     }
 }
 
-function checkAnswer(event) {
+    function checkAnswer(event) {
     event.preventDefault();
 
     yesnoEl.style.display = "block";
     let p = document.createElement("p");
     yesnoEl.appendChild(p);
+
+    setTimeout(function () {
+        p.style.display = 'none';
+    }, 1000);
