@@ -177,3 +177,7 @@ function clearScores() {
     scoreListEl.innerHTML="";
 }
 
+// function checks answers on a loop
+ansBtn.forEach(item => {
+    item.addEventListener('click', checkAnswer);
+});
