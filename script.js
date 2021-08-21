@@ -152,4 +152,8 @@ function addScore(event) {
         li.textContent = `${scoreList[i].initials}: ${scoreList[i].score}`;
         scoreListEl.append(li);
     }
+
+    // keeps scores in local stoarge
+    storeScores();
+    displayScores();
 }
