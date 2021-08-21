@@ -86,3 +86,14 @@ function startQuiz() {
     setTime();
     setQuestion(questionCount);
 }
+
+// function cycles through the questions after each are answered
+function setQuestion(id) {
+    if (id < questions.length) {
+        questionEl.textContent = questions[id].question;
+        ans1Btn.textContent = questions[id].answers[0];
+        ans2Btn.textContent = questions[id].answers[1];
+        ans3Btn.textContent = questions[id].answers[2];
+        ans4Btn.textContent = questions[id].answers[3];
+    }
+}
