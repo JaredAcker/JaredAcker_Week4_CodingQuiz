@@ -3,6 +3,7 @@ let timeEl = document.querySelector("p.time");
 let secondsLeft = 75;
 let scoreEl = document.querySelector("#score");
 
+
 // adding more query selectors for the intro and the questions
 const introEl = document.querySelector("#intro");
 
