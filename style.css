@@ -7,3 +7,12 @@
 html, body {
     height: 100%;
 }
+
+
+/* hides the questions, final, highscores and yesno ID's */
+#questions,
+#final,
+#highscores,
+#yesno {
+    display: none;  
+  } 
