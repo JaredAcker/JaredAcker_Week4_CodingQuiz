@@ -97,3 +97,6 @@ function setQuestion(id) {
         ans4Btn.textContent = questions[id].answers[3];
     }
 }
+
+function checkAnswer(event) {
+    event.preventDefault();
