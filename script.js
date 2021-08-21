@@ -157,3 +157,7 @@ function addScore(event) {
     storeScores();
     displayScores();
 }
+
+function storeScores() {
+    localStorage.setItem("scoreList", JSON.stringify(scoreList));
+}
