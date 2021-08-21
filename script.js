@@ -119,4 +119,6 @@ function setQuestion(id) {
     if (questionCount < questions.length) {
         questionCount++;
     }
+
+    setQuestion(questionCount);
 }
