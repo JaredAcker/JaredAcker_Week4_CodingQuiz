@@ -63,6 +63,7 @@ const questions = [
     }
 ];
 
+// timer functions for the start of the quiz
 function setTime() {
     let timerInterval = setInterval(function () {
         secondsLeft--;
@@ -75,4 +76,13 @@ function setTime() {
             scoreEl.textContent = secondsLeft;
         }
     }, 1000);
+}
+
+function startQuiz() {
+    introEl.style.display = "none";
+    questionsEl.style.display = "block";
+    questionCount = 0;
+
+    setTime();
+    setQuestion(questionCount);
 }
