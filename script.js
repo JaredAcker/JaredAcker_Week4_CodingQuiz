@@ -122,3 +122,6 @@ function setQuestion(id) {
 
     setQuestion(questionCount);
 }
+
+// starts the quiz
+startBtn.addEventListener("click", startQuiz);
