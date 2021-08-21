@@ -108,3 +108,11 @@ function setQuestion(id) {
     setTimeout(function () {
         p.style.display = 'none';
     }, 1000);
+
+    if (questions[questionCount].correctAnswer === event.target.value) {
+        p.textContent = "Correct!";
+    } else if (questions[questionCount].correctAnswer !== event.target.value) {
+        secondsLeft = secondsLeft - 10;
+        p.textContent = "Wrong!";
+    }
+}
