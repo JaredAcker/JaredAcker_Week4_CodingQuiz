@@ -192,3 +192,6 @@ goBackBtn.addEventListener("click", function () {
     secondsLeft = 75;
     timeEl.textContent = `Time:${secondsLeft}s`;
 });
+
+// clears the scores
+clearScrBtn.addEventListener("click", clearScores);
