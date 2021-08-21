@@ -128,3 +128,9 @@ function setQuestion(id) {
 // starts the quiz
 startBtn.addEventListener("click", startQuiz);
 
+// a function that adds the final score
+function addScore(event) {
+    event.preventDefault();
+
+    finalEl.style.display = "none";
+    highscoresEl.style.display = "block";
