@@ -9,4 +9,5 @@ const introEl = document.querySelector("#intro");
 const questionsEl = document.querySelector("#questions");
 let questionEl = document.querySelector("#question");
 let questionCount = 0;
-const yaynayEl = document.querySelector("#yesno");
+const yesnoEl = document.querySelector("#yesno");
+
