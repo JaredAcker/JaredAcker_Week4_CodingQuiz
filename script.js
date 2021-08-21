@@ -170,3 +170,9 @@ function displayScores() {
         scoreList = storedScoreList;
     }
 }
+
+// this function clears the scores
+function clearScores() {
+    localStorage.clear();
+    scoreListEl.innerHTML="";
+}
